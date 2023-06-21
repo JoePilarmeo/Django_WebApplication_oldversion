@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'webapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webapp_db_django',
-        'USERNAME': 'root' ,
-        'PASSWORD': 'root',
-        'PORT': '3306' ,
-        'HOST': 'localhost' 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'USERNAME': 'root' ,
+        # 'PASSWORD': 'root',
+        # 'PORT': '3306' ,
+        # 'HOST': 'localhost' 
     }
 }
 
